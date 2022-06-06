@@ -18,5 +18,10 @@ html {
   background-color: white;
   box-shadow: 0 2px #eee;
   padding: 10px;
-  margin: 10px 0;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.section--body {
+  margin-top: 10px;
 }
