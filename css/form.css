@@ -1,0 +1,11 @@
+.form__button {
+  background-color: #027381;
+  color: #b4e2eb;
+  padding: 8px;
+  border: none;
+}
+
+.form__field {
+  width: 500px;
+  padding: 5px;
+}
