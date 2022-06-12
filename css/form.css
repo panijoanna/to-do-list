@@ -15,9 +15,17 @@
 
 .form__field {
   padding: 8px;
-  width: 500px;
+  width: 100%;
   display: flex;
   align-self: center;
   border: 2px solid #e2e2e2;
-  color: #e2e2e2;
+}
+
+@media (max-width: 767px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+  }
 }
