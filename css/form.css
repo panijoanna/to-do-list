@@ -8,12 +8,14 @@
   background-color: #027381;
   color: #fff;
   padding: 10px;
-  margin: 2px 30px;
   border: none;
+  width: 150px;
 }
 
 .form__field {
-  padding: 5px;
-  width: 600px;
+  padding: 8px;
+  width: 500px;
   display: flex;
+  align-self: center;
+  border: 2px solid #e2e2e2;
 }
