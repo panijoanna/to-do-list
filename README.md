@@ -9,7 +9,8 @@ https://panijoanna.github.io/to-do-list/
 
 ## Technologies 🛠
 1. HTML
-2. CSS
+2. CSS (@media queries, flexbox)
 3. JavaScript
 
 ## Instruction ✔️
+
