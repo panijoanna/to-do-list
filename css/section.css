@@ -10,3 +10,7 @@
 .section--body {
   margin-top: 10px;
 }
+
+.section__heading {
+  font-weight: 900;
+}
