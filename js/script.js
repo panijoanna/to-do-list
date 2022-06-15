@@ -36,22 +36,8 @@
         });
     };
 
-    const onFormSubmit = (event) => {
-        event.preventDefault();
-
-        const newTaskElement = document.querySelector(".js-newTask");
-        const newTaskContent = newTaskElement.value.trim();
-
-        if (newTaskContent !== "") {
-            addNewTask(newTaskContent);
-            newTaskElement.value = "";
-        }
-
-        newTaskElement.focus();
-    };
-
     const render = () => {
-        let taskListHTMLContent = "";
+        let tasksListHTMLContent = "";
 
         for (const task of tasks) {
             tasksListHTMLContent += `
@@ -77,6 +63,19 @@
         bindToggleDoneEvents();
     };
 
+    const onFormSubmit = (event) => {
+        event.preventDefault();
+
+        const newTaskElement = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskElement.value.trim();
+
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
+            newTaskElement.value = "";
+        }
+
+        newTaskElement.focus();
+    };
 
     const init = () => {
         render();
