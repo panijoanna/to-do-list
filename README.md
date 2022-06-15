@@ -9,9 +9,8 @@ https://panijoanna.github.io/to-do-list/
 
 ## Technologies 🛠
 1. HTML
-2. CSS (@media queries, flexbox)
+2. CSS (@media queries, flexbox, grid)
 3. JavaScript
 
 ## Instruction ✔️
-![Animation](https://user-images.githubusercontent.com/105354955/173836955-b0a3fca7-39b6-4083-bf38-26fc11ffd2e9.gif)
-
+![animacja](https://user-images.githubusercontent.com/105354955/173838344-5eb8aabb-ca31-412f-966e-b2dd50a36d24.gif)
