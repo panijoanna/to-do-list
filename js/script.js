@@ -9,4 +9,20 @@
         render();
     };
 
+    const addNewTask = (newTaskContent) => {
+        tasks.push({
+            content: newTaskContent
+        });
+        render();
+    };
+
+    const bindRemoveEvents = () => {
+        const removeButtons = document.querySelectorAll(".js-remove");
+
+        removeButtons.forEach((removeButton, taskIndex) => {
+            removeButton.addEventListener("click", () => {
+                removeTask(taskIndex);
+            });
+        });
+    };
 }
