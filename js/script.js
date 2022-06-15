@@ -50,8 +50,6 @@
         newTaskElement.focus();
     };
 
-    
-
     const render = () => {
         let taskListHTMLContent = "";
 
@@ -78,6 +76,16 @@
         bindRemoveEvents();
         bindToggleDoneEvents();
     };
+
+
+    const init = () => {
+        render();
+
+        const form = document.querySelector(".js-form");
+        form.addEventListener("submit", onFormSubmit);
+    };
+
+    init();
 
 
 }
