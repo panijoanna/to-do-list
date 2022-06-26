@@ -19,7 +19,7 @@
         render();
     };
 
-    const bindRemoveEvents = () => {
+    const removeEvents = () => {
         const removeButtons = document.querySelectorAll(".js-remove");
 
         removeButtons.forEach((removeButton, itemIndex) => {
@@ -29,7 +29,7 @@
         });
     };
 
-    const bindToggleDoneEvents = () => {
+    const toggleDoneEvents = () => {
         const toggleDoneButtons = document.querySelectorAll(".js-toggleDone");
 
         toggleDoneButtons.forEach((toggleDoneButton, itemIndex) => {
@@ -40,10 +40,10 @@
     };
 
     const render = () => {
-        let tasksListHTMLContent = "";
+        let listHTMLContent = "";
 
         for (const task of tasks) {
-            tasksListHTMLContent += `
+            listHTMLContent += `
             <li
             class="tasks__item js-task"
             >
@@ -60,25 +60,26 @@
             `;
         }
 
-        document.querySelector(".js-tasks").innerHTML = tasksListHTMLContent;
+        document.querySelector(".js-tasks").innerHTML = listHTMLContent;
 
-        bindRemoveEvents();
-        bindToggleDoneEvents();
+        removeEvents();
+        toggleDoneEvents();
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const newTaskElement = document.querySelector(".js-newTask");
-        const newTaskContent = newTaskElement.value.trim();
+        const newTaskItem = document.querySelector(".js-newTask");
+        const newTaskContent = newTaskItem.value.trim();
 
         if (newTaskContent !== "") {
             addTask(newTaskContent);
-            newTaskElement.value = "";
+            newTaskItem.value = "";
         }
 
-        newTaskElement.focus();
+        newTaskItem.focus();
     };
+    
 
     const init = () => {
         render();
