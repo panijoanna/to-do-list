@@ -12,7 +12,7 @@
         render();
     };
 
-    const addNewTask = (newTaskContent) => {
+    const addTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent
         });
@@ -73,7 +73,7 @@
         const newTaskContent = newTaskElement.value.trim();
 
         if (newTaskContent !== "") {
-            addNewTask(newTaskContent);
+            addTask(newTaskContent);
             newTaskElement.value = "";
         }
 
