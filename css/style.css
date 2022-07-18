@@ -11,5 +11,7 @@ html {
 .body {
   background-color: #eeeeee;
   font-family: "Lato", sans-serif;
-  margin: 80px;
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 900px;
 }
