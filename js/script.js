@@ -1,5 +1,4 @@
 {
-
     const tasks = [];
 
     const removeTask = (itemIndex) => {
@@ -79,7 +78,6 @@
 
         newTaskItem.focus();
     };
-    
 
     const init = () => {
         render();
@@ -89,6 +87,4 @@
     };
 
     init();
-
-
 }
