@@ -1,10 +1,10 @@
 .section {
   background-color: white;
   box-shadow: 0 2px #eee;
-  margin: 0 auto;
-  max-width: 900px;
   display: flex;
   flex-direction: column;
+  max-width: 900px;
+  margin: 10px 0;
 }
 
 .section__heading {
