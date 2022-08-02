@@ -68,6 +68,10 @@
 
     };
 
+    const bindButtonsEvents = () => {
+
+    };
+
     const onFormSubmit = (event) => {
         event.preventDefault();
 
