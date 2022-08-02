@@ -59,9 +59,6 @@
         }
 
         document.querySelector(".js-tasks").innerHTML = listHTMLContent;
-
-        removeEvents();
-        toggleDoneEvents();
     };
 
     const renderButtons = () => {
@@ -70,6 +67,14 @@
 
     const bindButtonsEvents = () => {
 
+    };
+
+    const render = () => {
+        renderTasks();
+        renderButtons();
+
+        removeEvents();
+        toggleDoneEvents();
     };
 
     const onFormSubmit = (event) => {
