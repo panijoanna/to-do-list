@@ -1,5 +1,5 @@
 {
-    const tasks = [];
+    let tasks = [];
 
     const removeTask = (itemIndex) => {
         tasks.splice(itemIndex, 1);
