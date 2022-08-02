@@ -39,7 +39,7 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let listHTMLContent = "";
 
         for (const task of tasks) {
@@ -62,6 +62,10 @@
 
         removeEvents();
         toggleDoneEvents();
+    };
+
+    const renderButtons = () => {
+
     };
 
     const onFormSubmit = (event) => {
