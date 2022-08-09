@@ -12,6 +12,7 @@
   border: none;
   width: 200px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .form__field {
