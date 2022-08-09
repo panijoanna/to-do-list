@@ -15,6 +15,9 @@
   transition: 0.5s;
 }
 
+.form__button:hover {
+}
+
 .form__field {
   padding: 8px;
   width: 100%;
