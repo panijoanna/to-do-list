@@ -16,6 +16,7 @@
 }
 
 .form__button:hover {
+  background: hsl(187, 100%, 31%);
 }
 
 .form__field {
