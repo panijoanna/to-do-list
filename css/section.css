@@ -5,6 +5,8 @@
   flex-direction: column;
   max-width: 900px;
   margin: 10px 0;
+  border: 1px solid #e2e2e2;
+  padding: 5px 20px;
 }
 
 .section__heading {
