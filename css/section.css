@@ -30,3 +30,9 @@
     flex-wrap: wrap;
   }
 }
+
+@media (max-width: 767px) {
+  .lists__button {
+    padding: 10px;
+  }
+}
