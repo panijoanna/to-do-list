@@ -31,6 +31,10 @@
   transition: 0.5s;
 }
 
+.lists__button {
+  color: #027381;
+}
+
 .lists__button--allDone:disabled {
   color: grey;
 }
