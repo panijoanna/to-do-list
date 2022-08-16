@@ -12,3 +12,9 @@
 .section__heading {
   font-weight: 900;
 }
+
+.section__container--toggleButtons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
