@@ -14,6 +14,10 @@
   border-bottom: 1px solid #ddd;
 }
 
+.tasks__item--hidden {
+  display: none;
+}
+
 .tasks__content--toggleDone {
   text-decoration: line-through;
 }
@@ -25,6 +29,10 @@
   height: 30px;
   padding: 0;
   transition: 0.5s;
+}
+
+.lists__button--allDone:disabled {
+  color: grey;
 }
 
 .tasks__button--toggleDone {
