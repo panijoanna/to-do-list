@@ -1,4 +1,4 @@
-.section__header {
+.section {
   background-color: white;
   box-shadow: 0 2px #eee;
   display: flex;
@@ -13,7 +13,7 @@
   font-weight: 900;
 }
 
-.section__container--toggleButtons {
+.section__header--toggleButtons {
   display: flex;
   justify-content: space-between;
   align-items: center;
