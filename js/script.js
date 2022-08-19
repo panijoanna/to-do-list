@@ -15,7 +15,9 @@
     const addTask = (newTaskContent) => {
         tasks = [
             ...tasks,
-            { content: newTaskContent },
+            {
+                content: newTaskContent
+            },
         ];
         render();
     };
@@ -64,18 +66,25 @@
 
     const renderButtons = () => {
         let renderedButtons = "";
-        renderedButtons += `
-        <button class="lists__button lists__button--hide js-hide">
+
+        if (tasks.length > 0) {
+            renderedButtons += `
+        <button class="lists__button">
         ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
-        <button class="lists__button lists__button--allDone js-hide">
+        <button class="lists__button lists__button--allDone">
         Ukończ wszystkie
         </button>
         `;
+        }
+
         document.querySelector(".js-buttons").innerHTML = renderedButtons;
+
     };
 
+
     const bindButtonsEvents = () => {
+
 
     };
 
@@ -85,6 +94,7 @@
 
         removeEvents();
         toggleDoneEvents();
+        bindButtonsEvents();
     };
 
     const onFormSubmit = (event) => {
@@ -106,6 +116,7 @@
 
         const form = document.querySelector(".js-form");
         form.addEventListener("submit", onFormSubmit);
+
     };
 
     init();

@@ -14,10 +14,6 @@
   border-bottom: 1px solid #ddd;
 }
 
-.tasks__item--hidden {
-  display: none;
-}
-
 .tasks__content--toggleDone {
   text-decoration: line-through;
 }
