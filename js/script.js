@@ -1,11 +1,16 @@
 {
-
     let tasks = [];
     let hideDoneTasks = false;
 
     const hideTasks = () => {
         hideDoneTasks = !hideDoneTasks;
 
+        let task = document.querySelector(".js-task");
+        if (hideDoneTasks) {
+            task.classList.add("hidden");
+            console.log(task.classList);
+            console.log(getComputedStyle(task));
+        }
         render();
     };
 
@@ -14,12 +19,11 @@
             ...tasks.slice(0, itemIndex),
             ...tasks.slice(itemIndex + 1)
         ];
-
         render();
     };
 
-    const toggleTaskDone = (itemIndex) => {
-        tasks[itemIndex].done = !tasks[itemIndex].done;
+    const toggleTaskDone = (itemIndex) => { 
+        tasks[itemIndex].done = !tasks[itemIndex].done; 
 
         render();
     };
@@ -30,6 +34,9 @@
             done: true,
         }));
 
+        const listButton = document.querySelector(".lists__button--allDone"); 
+        listButton.setAttribute("disabled", true);
+        console.log(listButton);
         render();
     }
 
@@ -41,7 +48,6 @@
                 done: false
             },
         ];
-
         render();
     };
 
@@ -67,7 +73,7 @@
 
     const renderTasks = () => {
         let listHTMLContent = "";
-
+        
         for (const task of tasks) {
             listHTMLContent += `
             <li class="tasks__item js-task">
@@ -85,6 +91,7 @@
         }
 
         document.querySelector(".js-tasks").innerHTML = listHTMLContent;
+        
     };
 
     const renderButtons = () => {
@@ -105,10 +112,13 @@
     };
 
     const bindButtonsEvents = () => {
-        const listButton = document.querySelector(".lists__button--allDone");
-        if (listButton != null) {
+        const listButton = document.querySelector(".lists__button--allDone");   
+        const hideButton = document.querySelector(".lists__button--hide");
+
+        if (listButton != null && hideButton != null) {
             listButton.addEventListener("click", toggleAllTasksDone);
-        }
+            hideButton.addEventListener("click", hideTasks);
+        } 
     };
 
     const render = () => {
@@ -144,3 +154,5 @@
 
     init();
 }
+
+
