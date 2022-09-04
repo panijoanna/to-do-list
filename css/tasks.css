@@ -27,12 +27,18 @@
   transition: 0.5s;
 }
 
+.hidden {
+  display: none;
+}
+
 .lists__button {
   color: #027381;
+  border: none;
+  background-color: transparent;
 }
 
 .lists__button--allDone:disabled {
-  color: grey;
+  color: rgb(118, 110, 110);
 }
 
 .tasks__button--toggleDone {
@@ -57,4 +63,10 @@
 
 .tasks__button--remove:active {
   background: hsl(348, 83%, 57%);
+}
+
+@media (max-width: 767px) {
+  .lists__button {
+    padding: 10px;
+  }
 }
