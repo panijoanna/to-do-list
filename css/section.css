@@ -19,20 +19,9 @@
   align-items: center;
 }
 
-.lists__button {
-  border: none;
-  background-color: transparent;
-}
-
 @media (max-width: 767px) {
   .section__container--toggleButtons {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 767px) {
-  .lists__button {
-    padding: 10px;
   }
 }
