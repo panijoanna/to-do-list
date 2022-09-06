@@ -13,6 +13,6 @@ https://panijoanna.github.io/to-do-list/
 3. JavaScript (ES6)
 
 ## Instruction ✔️
-![todo](https://user-images.githubusercontent.com/105354955/188605799-476a86a4-db4c-40be-b1fb-72cd3a9d3919.gif)
+![6se7wc](https://user-images.githubusercontent.com/105354955/188606259-d886d21e-b8c1-4922-99fe-b3c74b13dc40.gif)
 
 
