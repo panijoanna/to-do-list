@@ -24,4 +24,20 @@
     display: flex;
     flex-wrap: wrap;
   }
+
+  @media (max-width: 767px) {
+    .section__header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .section__buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
 }
