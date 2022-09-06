@@ -31,9 +31,6 @@
             done: true,
         }));
 
-        const listButton = document.querySelector(".lists__button--allDone");
-        listButton.disabled = "disabled";
-
         render();
     }
 
