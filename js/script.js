@@ -4,12 +4,7 @@
 
     const hideTasks = () => {
         hideDoneTasks = !hideDoneTasks;
-
-        let taskLiElements = document.querySelectorAll(".js-task");
-
-        if (hideDoneTasks) {
-
-        }
+        
         render();
     };
 
