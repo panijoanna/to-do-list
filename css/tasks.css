@@ -37,10 +37,6 @@
   background-color: transparent;
 }
 
-.lists__button--allDone:disabled {
-  color: rgb(118, 110, 110);
-}
-
 .tasks__button--toggleDone {
   background: hsl(120, 61%, 39%);
 }
