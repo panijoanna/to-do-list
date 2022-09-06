@@ -5,11 +5,10 @@
     const hideTasks = () => {
         hideDoneTasks = !hideDoneTasks;
 
-        let task = document.querySelector(".js-task");
+        let taskLiElements = document.querySelectorAll(".js-task");
+
         if (hideDoneTasks) {
-            task.classList.add("hidden");
-            console.log(task.classList);
-            console.log(getComputedStyle(task));
+
         }
         render();
     };
@@ -22,8 +21,11 @@
         render();
     };
 
-    const toggleTaskDone = (itemIndex) => { 
-        tasks[itemIndex].done = !tasks[itemIndex].done; 
+    const toggleTaskDone = (itemIndex) => {
+        tasks[itemIndex] = {
+            ...tasks[itemIndex],
+            done: !tasks[itemIndex].done,
+        };
 
         render();
     };
@@ -34,9 +36,9 @@
             done: true,
         }));
 
-        const listButton = document.querySelector(".lists__button--allDone"); 
-        listButton.setAttribute("disabled", true);
-        console.log(listButton);
+        const listButton = document.querySelector(".lists__button--allDone");
+        listButton.disabled = "disabled";
+
         render();
     }
 
@@ -48,6 +50,7 @@
                 done: false
             },
         ];
+
         render();
     };
 
@@ -69,14 +72,15 @@
                 toggleTaskDone(itemIndex);
             });
         });
+
     };
 
     const renderTasks = () => {
         let listHTMLContent = "";
-        
+
         for (const task of tasks) {
             listHTMLContent += `
-            <li class="tasks__item js-task">
+            <li class="tasks__item js-task" ${task.done && hideDoneTasks ? "hidden" : ""}>
             <button class="tasks__button tasks__button--toggleDone js-toggleDone">
             ${task.done ? "✓" : ""}
             </button>
@@ -91,7 +95,7 @@
         }
 
         document.querySelector(".js-tasks").innerHTML = listHTMLContent;
-        
+
     };
 
     const renderButtons = () => {
@@ -112,13 +116,13 @@
     };
 
     const bindButtonsEvents = () => {
-        const listButton = document.querySelector(".lists__button--allDone");   
+        const listButton = document.querySelector(".lists__button--allDone");
         const hideButton = document.querySelector(".lists__button--hide");
 
         if (listButton != null && hideButton != null) {
             listButton.addEventListener("click", toggleAllTasksDone);
             hideButton.addEventListener("click", hideTasks);
-        } 
+        }
     };
 
     const render = () => {
@@ -154,5 +158,3 @@
 
     init();
 }
-
-
