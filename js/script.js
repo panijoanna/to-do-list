@@ -4,7 +4,7 @@
 
     const hideTasks = () => {
         hideDoneTasks = !hideDoneTasks;
-        
+
         render();
     };
 
@@ -101,7 +101,7 @@
         <button class="lists__button lists__button--hide js-toggleButton">
         ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
         </button>
-        <button class="lists__button lists__button--allDone js-toggleAllDone">
+        <button ${tasks.every(task => task.done) && "disabled"} class="lists__button lists__button--allDone js-toggleAllDone">
         Ukończ wszystkie
         </button>
         `;

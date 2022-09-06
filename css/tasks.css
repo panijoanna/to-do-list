@@ -31,6 +31,10 @@
   display: none;
 }
 
+.lists__button--allDone:disabled {
+  color: rgb(154, 142, 142);
+}
+
 .lists__button {
   color: #027381;
   border: none;
