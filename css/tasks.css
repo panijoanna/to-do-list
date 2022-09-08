@@ -39,6 +39,11 @@
   color: #027381;
   border: none;
   background-color: transparent;
+  transition: 0.5s;
+}
+
+.lists__button:hover {
+  color: #51a5ad;
 }
 
 .tasks__button--toggleDone {
