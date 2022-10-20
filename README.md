@@ -1,18 +1,18 @@
-# To-do-list 📝
+#📁 To-do-list ✍
 
-## Introduction ✔️
+##✅ Introduction 
 Simple to-do list. You can add, delete, or mark as done task.
 
-## Demo ✔️
+##✅ Demo 
 Here is my demo:
 https://panijoanna.github.io/to-do-list/
 
-## Technologies 🛠
+##✅ Technologies 🛠
 1. HTML
 2. CSS 
-3. JavaScript (ES6)
+3. JavaScript/ES6 (let, const, destructuring, array, objects, slice method, map, forEach, addEventListener, for loop, if statement, every, preventDefault method)
 
-## Instruction ✔️
+##✅ Instruction 
 ![todo](https://user-images.githubusercontent.com/105354955/188606855-31d250bf-e862-4145-8b31-e3d1ca9bc92a.gif)
 
 
