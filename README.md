@@ -9,24 +9,24 @@ https://panijoanna.github.io/to-do-list/
 
 ## ✅ Technologies 🛠
 1. HTML
-- BEM
-- accessibility
-- semantic
+*BEM
+*accessibility
+*semantic
 2. CSS 
-- responsive web design
-- flexbox
-- media queries
+*responsive web design
+*flexbox
+*media queries
 3. JavaScript/ES6 + features:
-- let/const
-- arrow function
-- template literals
-- destructuring
-- loop for...of/forEach
-- if statement
-- arrays/objects
-- map/slice/every
-- ternary operator
-- addEventListener
+*let/const
+*arrow function
+*template literals
+*destructuring
+*loop for...of/forEach
+*if statement
+*arrays/objects
+*map/slice/every
+*ternary operator
+*addEventListener
 
 ## ✅ Instruction 
 1. Enter the task in the input
