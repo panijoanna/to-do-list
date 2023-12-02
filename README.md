@@ -7,7 +7,7 @@ Simple to-do list. You can add, delete, or mark as done task.
 
 #### Tech stack
 ```
-HTML3 & CSS3
+HTML5 & CSS3
 Vanilla JavaScript ES6+
 ```
 
